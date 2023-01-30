@@ -1,0 +1,98 @@
+#buttonPane{
+    -fx-background-color:linear-gradient(to bottom right,#393939,#171515);
+}
+
+#watchPane{
+    -fx-background-color:linear-gradient(to bottom right,#1BDAFF,#0EA3E4);
+}
+
+#upArrow > .button, #downArrow > .button{
+    -fx-background-color:none;
+    -fx-font-size:25;
+    -fx-text-fill:linear-gradient(to bottom right,#1BDAFF,#0EA3E4);
+    -fx-font-weight:bold;
+}
+
+#upArrow > .button:hover, #downArrow > .button:hover{
+    -fx-background-color:none;
+    -fx-font-size:25;
+    -fx-text-fill:linear-gradient(to top left,#F32A2A,#F3A92A);
+    -fx-font-weight:bold;
+}
+
+.check-box > .box{
+    -fx-background-color:linear-gradient(to bottom right,#393939,#171515);
+}
+
+.check-box:selected > .box{
+    -fx-background-color:linear-gradient(to top left,#F32A2A,#F3A92A);
+}
+
+
+.check-box:selected > .box > .mark,
+.check-box:indeterminate  > .box > .mark{
+    -fx-background-color:linear-gradient(to bottom right,#393939,#171515);
+}
+
+
+
+#saveButton:hover{
+    -fx-background-color:linear-gradient(to top left,#64E6FF,#36CB00);
+}
+
+#cancleButton:hover{
+    -fx-background-color:linear-gradient(to top left,#64E6FF,#FF1B1B);
+}
+#cancleButton,#saveButton{
+    -fx-font-size:25;
+    -fx-background-color:linear-gradient(to top left,#1BDAFF,#0EA3E4);
+    -fx-background-radius:30 5 5 30;
+}
+
+#Kolo{
+    -fx-fill:linear-gradient(to bottom right,#221E1E,#414141);
+}
+
+#czas{
+    -fx-font-size:35;
+    -fx-font-weight:bold;
+}
+#timeMoney{
+    -fx-font-size:42;
+    -fx-text-fill:linear-gradient(to top left,#F32A2A,#F3A92A);
+    -fx-font-weight:bold;
+    -fx-font-family: "Times new roman";
+    -fx-font-style:italic;
+}
+
+.slider{
+    -fx-text-fill:linear-gradient(to top left,#F32A2A,#F3A92A);
+}
+
+
+.slider .track {
+     -fx-background-color:linear-gradient(to right,#393939,#171515);
+     -fx-background-radius:0;
+}
+
+.slider .thumb{
+    -fx-pref-height:18px;
+    -fx-pref-width:8px;
+    -fx-background-color:linear-gradient(to top left,#F32A2A,#F3A92A);
+    -fx-background-radius:0;
+
+}
+
+.radio {
+    -fx-background-color:linear-gradient(to right,#393939,#171515);
+}
+
+.radio-button:selected .radio .dot{
+    -fx-background-color:linear-gradient(to top left,#F32A2A,#F3A92A);
+}
+#nazwa{
+    -fx-background-color:linear-gradient(to bottom right,#221E1E,#414141);
+    -fx-text-fill:linear-gradient(to top left,#F32A2A,#F3A92A);
+    -fx-font-size:15;
+    -fx-font-weight:bold;
+}

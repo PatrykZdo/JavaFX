@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200" minWidth="200" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zaczynamyfx.HelloController">
+
+   <children>
+      <Pane fx:id="buttonPane" prefHeight="400.0" prefWidth="234.0">
+         <children>
+            <Label fx:id="timeMoney" alignment="CENTER" layoutY="25.0" prefHeight="108.0" prefWidth="234.0" rotate="14.9" text="Time is&#10;MONEY!!!" textFill="WHITE" />
+            <VBox alignment="BOTTOM_CENTER" layoutX="48.0" layoutY="50.0" prefHeight="301.0" prefWidth="186.0" spacing="10.0">
+               <children>
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" prefHeight="65.0" prefWidth="165.0" text="Zapisz" />
+                  <Button fx:id="cancleButton" mnemonicParsing="false" onAction="#logout" prefHeight="65.0" prefWidth="165.0" text="Anuluj" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane fx:id="watchPane" layoutX="234.0" prefHeight="400.0" prefWidth="372.0">
+         <children>
+            <Pane fx:id="watchPane1" layoutX="91.5" layoutY="66.5" prefHeight="200" prefWidth="200">
+               <children>
+                  <Circle fx:id="Kolo" centerX="100.0" centerY="100.0" radius="100.0" strokeType="INSIDE" />
+                  <Label fx:id="czas" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" text="12 : 45" textAlignment="RIGHT" textFill="WHITE" />
+                  <HBox fx:id="upArrow" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5">
+                     <children>
+                        <Button fx:id="godzinaUp" mnemonicParsing="false" onAction="#zwiekszGodzine" text="^" />
+                        <Button fx:id="minutaUp" mnemonicParsing="false" onAction="#zwiekszMinute" text="^" />
+                     </children></HBox>
+                  <HBox fx:id="downArrow" alignment="CENTER" layoutY="100" prefHeight="100.0" prefWidth="200.0" spacing="6">
+                     <children>
+                        <Button fx:id="godzinaDown" mnemonicParsing="false" onAction="#zmniejszGodzine" rotate="180" text="^" />
+                        <Button fx:id="minutaDown" mnemonicParsing="false" onAction="#zmniejszMinute" rotate="180" text="^" />
+                     </children></HBox>
+               </children>
+            </Pane>
+            <HBox fx:id="checkbox" alignment="TOP_CENTER" layoutX="1.0" layoutY="286.0" prefHeight="25.0" prefWidth="365.0">
+               <children>
+                  <CheckBox fx:id="pon" mnemonicParsing="false" text="Pn  " />
+                  <CheckBox fx:id="wt" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Wt  " />
+                  <CheckBox fx:id="sr" layoutX="83.0" layoutY="10.0" mnemonicParsing="false" text="Śr  " />
+                  <CheckBox fx:id="czw" layoutX="144.0" layoutY="10.0" mnemonicParsing="false" text="Czw  " />
+                  <CheckBox fx:id="pt" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" text="Pt  " />
+                  <CheckBox fx:id="sb" layoutX="130.0" layoutY="10.0" mnemonicParsing="false" text="Sb  " />
+                  <CheckBox fx:id="nd" layoutX="176.0" layoutY="10.0" mnemonicParsing="false" text="Nd  " />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="305.0" prefHeight="94.0" prefWidth="365.0" spacing="55">
+               <children>
+                  <Slider fx:id="glosnosc" prefHeight="18.0" prefWidth="140.0" showTickLabels="true" value="80.0" />
+                  <RadioButton fx:id="powtarzaj" layoutX="80.0" mnemonicParsing="false" text="Powtarzaj" />
+               </children></HBox>
+            <TextField fx:id="nazwa" layoutX="90.0" layoutY="30.0" promptText="Nazwa Budzika" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
